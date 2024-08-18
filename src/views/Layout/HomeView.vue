@@ -13,9 +13,10 @@
   </div>
 </template>
 <script setup>
-import { useNumStore } from '@/stores'
-const useStore = useNumStore()
-
+// import { useUserStore1111 } from '@/stores'
+// const useStore = useNumStore1111()
+import { useUserStore1111 } from '@/stores'
+const useStore = useUserStore1111()
 const testBtn = () => {
   // pinia状态数据里的加一函数
   useStore.increment()
