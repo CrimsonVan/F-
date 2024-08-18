@@ -13,6 +13,7 @@ export const useUserStore = defineStore(
     function increment() {
       count.value++
     }
+
     function reset() {
       count.value = 0
     }
