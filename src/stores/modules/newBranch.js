@@ -4,7 +4,7 @@ import { defineStore } from 'pinia'
 export const useUserStore1111 = defineStore(
   'num',
   () => {
-    const count = ref(12123)
+    const count = ref(777)
     const avatar = ref(
       'https://mp-e0d15f0f-d6bf-4f95-b183-b82aede04535.cdn.bspapp.com/可爱蜘蛛侠.png'
     )
