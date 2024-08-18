@@ -21,7 +21,7 @@
   }
   const reset = () => {
     useStore.reset()
-    console.log(new);
+    // console.log(new);
     
   }
   </script>
