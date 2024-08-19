@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <div class="text">
-      <h1>你好,登录页</h1>
+      <h1>你好,GITHUB登录页</h1>
     </div>
     <div class="text">
       <h1>{{ useStore.count }}</h1>
