@@ -3,7 +3,7 @@
     <div class="text">
       <h1>你好,GITHUB登录页111</h1>
     </div>
-     <div class="text">
+    <div class="text">
       <h1>{{ useStore.count }}</h1>
     </div>
     <div>
