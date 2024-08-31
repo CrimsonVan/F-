@@ -33,6 +33,7 @@
         <el-input
           style="width: 170px; height: 24px; margin-left: 5px"
           placeholder="搜一搜"
+          v-focus
         />
         <el-popover placement="bottom-start" :width="400" trigger="hover">
           <div
@@ -199,11 +200,15 @@ import { onMounted, ref } from 'vue'
 import { useCategoryStore, useCartStore } from '@/stores'
 import { Search, ShoppingCart, DeleteFilled } from '@element-plus/icons-vue'
 import { useRouter } from 'vue-router'
-// import { el } from 'element-plus/es/locale'
 const categoryStore = useCategoryStore()
 const cartStore = useCartStore()
 const router = useRouter()
 const currentIndex0 = ref(null)
+const vFocus = {
+  mounted: (el) => {
+    el.focus()
+  }
+}
 const goCart = () => {
   router.push('/cart')
 }

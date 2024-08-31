@@ -22,6 +22,7 @@ export const changeCartGoodsAPI = (skuId, num, selected) => {
     }
   })
 }
+
 //改变购物车勾选择状态
 export const changeCartSelectedAPI = (selected, arr) => {
   return http({
@@ -33,6 +34,7 @@ export const changeCartSelectedAPI = (selected, arr) => {
     }
   })
 }
+
 //获取最新的购物车列表
 export const findNewCartListAPI = () => {
   return http({

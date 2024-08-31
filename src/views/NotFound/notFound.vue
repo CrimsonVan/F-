@@ -2,6 +2,7 @@
   <div class="cart-page">
     <div class="cart">
       <h1>404 NotFound</h1>
+      <div><input type="text" placeholder="请输入" v-focus /></div>
     </div>
   </div>
 </template>
