@@ -12,7 +12,7 @@
             cursor: pointer;
           "
           alt=""
-          @click="goCate('homepage')"
+          @click="goCate('0')"
         />
       </div>
       <!-- Category -->
