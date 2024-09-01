@@ -233,7 +233,7 @@ onMounted(() => {
   cartStore.updateNewList()
 })
 
-console.log('打印分类仓库', categoryStore.categoryList)
+// console.log('打印分类仓库', categoryStore.categoryList)
 </script>
 <style scoped lang="scss">
 .header {

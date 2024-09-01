@@ -500,12 +500,12 @@ const handleChange = (e) => {
 //地址标签选择
 const changeAdressTag = (e) => {
   addressForm.value.addressTags = e
-  console.log('监测收货地址', addressForm.value)
+  // console.log('监测收货地址', addressForm.value)
 }
 //是否默认选择
 const changeDefault = (e) => {
   addressForm.value.isDefault = e
-  console.log('监测收货地址', addressForm.value)
+  // console.log('监测收货地址', addressForm.value)
 }
 
 const changeActiveAddress = (item) => {
@@ -514,13 +514,13 @@ const changeActiveAddress = (item) => {
 const getCheckInfo = async () => {
   const res = await getCheckInfoAPI()
   checkInfo.value = res.result
-  console.log('打印checkInfo', checkInfo.value)
+  // console.log('打印checkInfo', checkInfo.value)
   const item = checkInfo.value.userAddresses.find(
     (item) => item.isDefault === 0
   )
 
   curAddress.value = item
-  console.log('打印curAddress', curAddress.value)
+  // console.log('打印curAddress', curAddress.value)
 }
 const addAddress = async () => {
   addressForm.value = {

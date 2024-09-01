@@ -18,7 +18,7 @@ onMounted(async () => {
   const res = await getBannerAPI()
 
   bannerList.value = res.result
-  console.log('打印轮播图', bannerList.value)
+  // console.log('打印轮播图', bannerList.value)
 })
 </script>
 <style lang="scss" scoped>

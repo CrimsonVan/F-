@@ -79,7 +79,6 @@ export const useCartStore = defineStore(
       // 把cartList中的每一项的selected都设置为当前的全选框状态
       // console.log('打印全选res', selected)
       cartList.value.forEach((item) => (item.selected = selected))
-      console.log(cartList.value)
 
       await changeCartSelectedAPI(selected, arr)
       // await updateNewList()

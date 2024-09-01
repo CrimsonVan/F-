@@ -26,7 +26,7 @@ const rules = {
   agree: [
     {
       validator: (rule, value, callBack) => {
-        console.log(value)
+        // console.log(value)
         //自定义校验逻辑
         // 勾选协议通过，不勾选不通过
         if (value) {
@@ -47,12 +47,12 @@ const doLogin = () => {
   // 调用实例方法
   formRef.value.validate(async (valid) => {
     // valid: 所有表单都通过校验  才为true
-    console.log(valid)
+    // console.log(valid)
     // 以valid做为判断条件 如果通过校验才执行登录逻辑
     if (valid) {
       // TODO LOGIN
-      let res = await userStore.getUserInfo({ account, password })
-      console.log('打印res', res)
+      await userStore.getUserInfo({ account, password })
+
       // return
       // // 1. 提示用户
       ElMessage({ type: 'success', message: '登录成功' })

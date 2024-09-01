@@ -1,4 +1,4 @@
-import http from '@/utils/http'
+import http from '@/utils/request'
 
 export const getOrderAPI = (id) => {
   return http({

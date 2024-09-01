@@ -62,12 +62,10 @@ const hotList = ref()
 const getHotList = async () => {
   const res = await findHotAPI()
   hotList.value = res.result
-  console.log('打印火热物品', hotList.value)
 }
 const getNewList = async () => {
   const res = await findNewAPI()
   newGoodsList.value = res.result
-  console.log('打印新鲜好物', newGoodsList.value)
 }
 const goNewDetail = (id) => {
   router.push(`/detail?id=${id}`)

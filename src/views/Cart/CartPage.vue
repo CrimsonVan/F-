@@ -173,6 +173,7 @@ import { useRouter } from 'vue-router'
 const router = useRouter()
 const cartStore = useCartStore()
 const isEmpty = ref(true)
+
 onMounted(() => {
   cartStore.updateNewList()
   cartStore.skuIdArr.length === 0

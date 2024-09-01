@@ -2,7 +2,7 @@
   <!-- 轮播图 -->
   <bannerPage></bannerPage>
   <!-- 主要分类介绍 -->
-  <div class="cart1-page">
+  <div class="cart-page">
     <div class="cart">
       <div style="width: 100%">
         <div style="text-align: center; font-size: 26px">全部分类</div>
@@ -95,7 +95,7 @@ const getCategoryData = async (id) => {
   const res = await getCategoryAPI(id)
 
   categoryData.value = res.result
-  console.log('打印分类详情', categoryData.value)
+  // console.log('打印分类详情', categoryData.value)
 }
 const goCateDetail = (id) => {
   router.push(`/detail?id=${id}`)
@@ -107,13 +107,12 @@ onMounted(() => {
   getCategoryData(route.params.id)
 })
 onBeforeRouteUpdate((to) => {
-  console.log('路由变化了')
+  // console.log('路由变化了')
   getCategoryData(to.params.id)
 })
 </script>
 <style lang="scss" scoped>
-.cart1-page {
-  // padding-top: 20px;
+.cart-page {
   width: 100%;
   background-color: #f5f5f5;
   display: flex;

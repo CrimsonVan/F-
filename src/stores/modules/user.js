@@ -8,12 +8,15 @@ export const useUserStore = defineStore(
   () => {
     // const cartStore = useCartStore()
     // 1. 定义管理用户数据的state
-    const userInfo = ref()
+    const userInfo = ref(null)
+    const count = ref(1)
+    const countAdd = () => {
+      count.value++
+    }
     // 2. 定义获取接口数据的action函数
     const getUserInfo = async ({ account, password }) => {
       const res = await loginAPI({ account, password })
       userInfo.value = res.result
-      console.log('打印userInfo', userInfo.value)
     }
     // 退出时清除用户信息
     const clearUserInfo = () => {
@@ -24,6 +27,8 @@ export const useUserStore = defineStore(
     // 3. 以对象的格式把state和action return
     return {
       userInfo,
+      count,
+      countAdd,
       getUserInfo,
       clearUserInfo
     }
